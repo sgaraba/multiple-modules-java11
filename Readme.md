@@ -1,4 +1,5 @@
 
+
 ### Compile single module
 javac -d output/com.apress.moduleA com.apress.moduleA/module-info.java com.apress.moduleA/com/apress/moduleA/Main.java
 
@@ -23,8 +24,8 @@ jar --create --file lib/com.apress.moduleC.jar -C output/com.apress.moduleC .
 java --module-path lib --module com.apress.moduleA
 
 ### Linking modules
-jlink --module-path lib;$JAVA_HOME/jmods --add-modules com.apress.moduleA --add-modules com.apress.moduleB --add-modules com.apress.moduleC --launcher launcher=com.apress.moduleA --output runtimeImage
-
+jlink --module-path lib;$JAVA_HOME/jmods --add-modules com.apress.moduleA --add-modules com.apress.moduleB --add-modules com.apress.moduleC --launcher launcher=com.apress.moduleA --output image
+jlink --module-path lib;$JAVA_HOME/jmods --add-modules com.apress.moduleA --add-modules com.apress.moduleB --add-modules com.apress.moduleC --launcher launcher=com.apress.moduleA --output imagez --compress 2 --strip-debug
 ### Run 
 cd runtimeImage
 
