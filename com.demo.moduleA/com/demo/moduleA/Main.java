@@ -1,7 +1,8 @@
-package com.apress.moduleA;
+package com.demo.moduleA;
 
-import com.apress.moduleB.Employee;
-import com.apress.moduleC.CUtils;
+
+import com.demo.moduleB.Employee;
+import com.demo.moduleC.CUtils;
 
 public class Main {
     public static void main(String[] args) {

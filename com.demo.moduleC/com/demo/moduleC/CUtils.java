@@ -1,4 +1,4 @@
-package com.apress.moduleC;
+package com.demo.moduleC;
 
 public class CUtils {
     public static void testCModule(){

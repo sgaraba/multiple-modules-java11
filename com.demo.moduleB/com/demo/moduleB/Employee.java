@@ -1,6 +1,6 @@
-package com.apress.moduleB;
+package com.demo.moduleB;
 
-import com.apress.moduleC.CUtils;
+import com.demo.moduleC.CUtils;
 
 public class Employee {
     private String firstName;
